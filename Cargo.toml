@@ -1,0 +1,20 @@
+[package]
+name = "pq-settlement-signing"
+version = "0.1.0"
+edition = "2024"
+description = "Hybrid Ed25519 + ML-DSA-65 signatures for settlement instructions, with a migration policy (educational)"
+license = "MIT"
+
+[dependencies]
+aws-lc-rs = "1.19"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[dev-dependencies]
+# A second, independent ML-DSA implementation (pure Rust, RustCrypto), used only to cross-check
+# that aws-lc-rs signatures verify elsewhere and vice versa. Not audited: test-only on purpose.
+ml-dsa = "0.1.2"
+
+[[bin]]
+name = "pq-settle"
+path = "src/main.rs"

@@ -1,0 +1,11 @@
+{
+  "instruction_id": "SI-2027-000417",
+  "trade_id": "T-88123",
+  "settlement_date": "2027-02-17",
+  "deliverer": "BANKAPTPLXXX",
+  "receiver": "BANKBBEBBXXX",
+  "isin": "XS1234567890",
+  "nominal": 1000000,
+  "cash_amount_minor": 100500000,
+  "currency": "EUR"
+}
